@@ -11,388 +11,469 @@ script = ExtResource("1_n0r7v")
 
 [node name="Rows" type="VBoxContainer" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 375.0
+offset_top = 249.0
+offset_right = 891.0
+offset_bottom = 765.0
 
 [node name="Row0" type="HBoxContainer" parent="Rows"]
 layout_mode = 2
 
 [node name="Slot0" type="Control" parent="Rows/Row0"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 
 [node name="Block" type="TextureRect" parent="Rows/Row0/Slot0"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 offset_left = 4.0
 offset_right = 4.0
 
 [node name="Letter" type="TextureRect" parent="Rows/Row0/Slot0"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 
 [node name="Slot1" type="Control" parent="Rows/Row0"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 
 [node name="Block" type="TextureRect" parent="Rows/Row0/Slot1"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 offset_left = 4.0
 offset_right = 4.0
 
 [node name="Letter" type="TextureRect" parent="Rows/Row0/Slot1"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 
 [node name="Slot2" type="Control" parent="Rows/Row0"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 
 [node name="Block" type="TextureRect" parent="Rows/Row0/Slot2"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 offset_left = 4.0
 offset_right = 4.0
 
 [node name="Letter" type="TextureRect" parent="Rows/Row0/Slot2"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 
 [node name="Slot3" type="Control" parent="Rows/Row0"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 
 [node name="Block" type="TextureRect" parent="Rows/Row0/Slot3"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 offset_left = 4.0
 offset_right = 4.0
 
 [node name="Letter" type="TextureRect" parent="Rows/Row0/Slot3"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 
 [node name="Slot4" type="Control" parent="Rows/Row0"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 
 [node name="Block" type="TextureRect" parent="Rows/Row0/Slot4"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 offset_left = 4.0
 offset_right = 4.0
 
 [node name="Letter" type="TextureRect" parent="Rows/Row0/Slot4"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 
 [node name="Row1" type="HBoxContainer" parent="Rows"]
 layout_mode = 2
 
 [node name="Slot0" type="Control" parent="Rows/Row1"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 
 [node name="Block" type="TextureRect" parent="Rows/Row1/Slot0"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 offset_left = 4.0
 offset_right = 4.0
 
 [node name="Letter" type="TextureRect" parent="Rows/Row1/Slot0"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 
 [node name="Slot1" type="Control" parent="Rows/Row1"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 
 [node name="Block" type="TextureRect" parent="Rows/Row1/Slot1"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 offset_left = 4.0
 offset_right = 4.0
 
 [node name="Letter" type="TextureRect" parent="Rows/Row1/Slot1"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 
 [node name="Slot2" type="Control" parent="Rows/Row1"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 
 [node name="Block" type="TextureRect" parent="Rows/Row1/Slot2"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 offset_left = 4.0
 offset_right = 4.0
 
 [node name="Letter" type="TextureRect" parent="Rows/Row1/Slot2"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 
 [node name="Slot3" type="Control" parent="Rows/Row1"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 
 [node name="Block" type="TextureRect" parent="Rows/Row1/Slot3"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 offset_left = 4.0
 offset_right = 4.0
 
 [node name="Letter" type="TextureRect" parent="Rows/Row1/Slot3"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 
 [node name="Slot4" type="Control" parent="Rows/Row1"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 
 [node name="Block" type="TextureRect" parent="Rows/Row1/Slot4"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 offset_left = 4.0
 offset_right = 4.0
 
 [node name="Letter" type="TextureRect" parent="Rows/Row1/Slot4"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 
 [node name="Row2" type="HBoxContainer" parent="Rows"]
 layout_mode = 2
 
 [node name="Slot0" type="Control" parent="Rows/Row2"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 
 [node name="Block" type="TextureRect" parent="Rows/Row2/Slot0"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 offset_left = 4.0
 offset_right = 4.0
 
 [node name="Letter" type="TextureRect" parent="Rows/Row2/Slot0"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 
 [node name="Slot1" type="Control" parent="Rows/Row2"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 
 [node name="Block" type="TextureRect" parent="Rows/Row2/Slot1"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 offset_left = 4.0
 offset_right = 4.0
 
 [node name="Letter" type="TextureRect" parent="Rows/Row2/Slot1"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 
 [node name="Slot2" type="Control" parent="Rows/Row2"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 
 [node name="Block" type="TextureRect" parent="Rows/Row2/Slot2"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 offset_left = 4.0
 offset_right = 4.0
 
 [node name="Letter" type="TextureRect" parent="Rows/Row2/Slot2"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 
 [node name="Slot3" type="Control" parent="Rows/Row2"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 
 [node name="Block" type="TextureRect" parent="Rows/Row2/Slot3"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 offset_left = 4.0
 offset_right = 4.0
 
 [node name="Letter" type="TextureRect" parent="Rows/Row2/Slot3"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 
 [node name="Slot4" type="Control" parent="Rows/Row2"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 
 [node name="Block" type="TextureRect" parent="Rows/Row2/Slot4"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 offset_left = 4.0
 offset_right = 4.0
 
 [node name="Letter" type="TextureRect" parent="Rows/Row2/Slot4"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 
 [node name="Row3" type="HBoxContainer" parent="Rows"]
 layout_mode = 2
 
 [node name="Slot0" type="Control" parent="Rows/Row3"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 
 [node name="Block" type="TextureRect" parent="Rows/Row3/Slot0"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 offset_left = 4.0
 offset_right = 4.0
 
 [node name="Letter" type="TextureRect" parent="Rows/Row3/Slot0"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 
 [node name="Slot1" type="Control" parent="Rows/Row3"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 
 [node name="Block" type="TextureRect" parent="Rows/Row3/Slot1"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 offset_left = 4.0
 offset_right = 4.0
 
 [node name="Letter" type="TextureRect" parent="Rows/Row3/Slot1"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 
 [node name="Slot2" type="Control" parent="Rows/Row3"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 
 [node name="Block" type="TextureRect" parent="Rows/Row3/Slot2"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 offset_left = 4.0
 offset_right = 4.0
 
 [node name="Letter" type="TextureRect" parent="Rows/Row3/Slot2"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 
 [node name="Slot3" type="Control" parent="Rows/Row3"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 
 [node name="Block" type="TextureRect" parent="Rows/Row3/Slot3"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 offset_left = 4.0
 offset_right = 4.0
 
 [node name="Letter" type="TextureRect" parent="Rows/Row3/Slot3"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 
 [node name="Slot4" type="Control" parent="Rows/Row3"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 
 [node name="Block" type="TextureRect" parent="Rows/Row3/Slot4"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 offset_left = 4.0
 offset_right = 4.0
 
 [node name="Letter" type="TextureRect" parent="Rows/Row3/Slot4"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 
 [node name="Row4" type="HBoxContainer" parent="Rows"]
 layout_mode = 2
 
 [node name="Slot0" type="Control" parent="Rows/Row4"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 
 [node name="Block" type="TextureRect" parent="Rows/Row4/Slot0"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 offset_left = 4.0
 offset_right = 4.0
 
 [node name="Letter" type="TextureRect" parent="Rows/Row4/Slot0"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 
 [node name="Slot1" type="Control" parent="Rows/Row4"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 
 [node name="Block" type="TextureRect" parent="Rows/Row4/Slot1"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 offset_left = 4.0
 offset_right = 4.0
 
 [node name="Letter" type="TextureRect" parent="Rows/Row4/Slot1"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 
 [node name="Slot2" type="Control" parent="Rows/Row4"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 
 [node name="Block" type="TextureRect" parent="Rows/Row4/Slot2"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 offset_left = 4.0
 offset_right = 4.0
 
 [node name="Letter" type="TextureRect" parent="Rows/Row4/Slot2"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 
 [node name="Slot3" type="Control" parent="Rows/Row4"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 
 [node name="Block" type="TextureRect" parent="Rows/Row4/Slot3"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 offset_left = 4.0
 offset_right = 4.0
 
 [node name="Letter" type="TextureRect" parent="Rows/Row4/Slot3"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 
 [node name="Slot4" type="Control" parent="Rows/Row4"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 
 [node name="Block" type="TextureRect" parent="Rows/Row4/Slot4"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 offset_left = 4.0
 offset_right = 4.0
 
 [node name="Letter" type="TextureRect" parent="Rows/Row4/Slot4"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 0
+
+[node name="Row5" type="HBoxContainer" parent="Rows"]
+layout_mode = 2
+
+[node name="Slot0" type="Control" parent="Rows/Row5"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+
+[node name="Block" type="TextureRect" parent="Rows/Row5/Slot0"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 0
+offset_left = 4.0
+offset_right = 4.0
+
+[node name="Letter" type="TextureRect" parent="Rows/Row5/Slot0"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 0
+
+[node name="Slot1" type="Control" parent="Rows/Row5"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+
+[node name="Block" type="TextureRect" parent="Rows/Row5/Slot1"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 0
+offset_left = 4.0
+offset_right = 4.0
+
+[node name="Letter" type="TextureRect" parent="Rows/Row5/Slot1"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 0
+
+[node name="Slot2" type="Control" parent="Rows/Row5"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+
+[node name="Block" type="TextureRect" parent="Rows/Row5/Slot2"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 0
+offset_left = 4.0
+offset_right = 4.0
+
+[node name="Letter" type="TextureRect" parent="Rows/Row5/Slot2"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 0
+
+[node name="Slot3" type="Control" parent="Rows/Row5"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+
+[node name="Block" type="TextureRect" parent="Rows/Row5/Slot3"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 0
+offset_left = 4.0
+offset_right = 4.0
+
+[node name="Letter" type="TextureRect" parent="Rows/Row5/Slot3"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 0
+
+[node name="Slot4" type="Control" parent="Rows/Row5"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+
+[node name="Block" type="TextureRect" parent="Rows/Row5/Slot4"]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 0
+offset_left = 4.0
+offset_right = 4.0
+
+[node name="Letter" type="TextureRect" parent="Rows/Row5/Slot4"]
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 0
 
 [node name="PlayerHearts" type="HBoxContainer" parent="."]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 0
-offset_right = 10.0
-offset_bottom = 10.0
+offset_left = 800.0
+offset_top = 100.0
+offset_right = 900.0
+offset_bottom = 200.0
 
 [node name="EnemyHearts" type="HBoxContainer" parent="."]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 100.0
+offset_top = 100.0
+offset_right = 200.0
+offset_bottom = 200.0
 
 [node name="EnemySprite" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 550.0
+offset_top = 100.0
+offset_right = 600.0
+offset_bottom = 150.0
