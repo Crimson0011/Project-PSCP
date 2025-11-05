@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://dd8tkfcw7iabq"]
+[gd_scene load_steps=6 format=3 uid="uid://dd8tkfcw7iabq"]
 
 [ext_resource type="Script" uid="uid://dt5y6vjkm7ot3" path="res://you_win.gd" id="1_w5032"]
+[ext_resource type="Texture2D" uid="uid://dikaweq1dv1yl" path="res://Untitled/Won_bg.png" id="2_e4xfp"]
 [ext_resource type="AudioStream" uid="uid://1m6t6crnr40i" path="res://Sound/notification-positive-bleep-joshua-chivers-1-00-01.mp3" id="2_vkac0"]
+[ext_resource type="Texture2D" uid="uid://ca1xmv5x5wgcd" path="res://Untitled/Rectangle 5.png" id="3_puq8g"]
+[ext_resource type="Texture2D" uid="uid://bt54gtr0maqob" path="res://Untitled/You Won.png" id="4_2emus"]
 
 [node name="YouWin_gd" type="Node2D"]
 
@@ -12,22 +15,58 @@ offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_w5032")
 
+[node name="Background" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_e4xfp")
+
+[node name="Group1" type="Sprite2D" parent="Control"]
+position = Vector2(578, 124)
+texture = ExtResource("4_2emus")
+
+[node name="Rectangle5" type="Sprite2D" parent="Control"]
+position = Vector2(582, 326)
+texture = ExtResource("3_puq8g")
+
 [node name="ScoreContainer" type="VBoxContainer" parent="Control"]
 layout_mode = 0
-offset_left = 500.0
-offset_top = 200.0
-offset_right = 540.0
-offset_bottom = 250.0
-
-[node name="HighScore" type="Label" parent="Control/ScoreContainer"]
-layout_mode = 2
+offset_left = 256.0
+offset_top = 224.0
+offset_right = 896.0
+offset_bottom = 423.0
 
 [node name="CurrentScore" type="Label" parent="Control/ScoreContainer"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
 
-[node name="Background" type="TextureRect" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="HighScore" type="Label" parent="Control/ScoreContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+
+[node name="NextButton" type="Button" parent="."]
+custom_minimum_size = Vector2(100, 50)
+offset_left = 142.0
+offset_top = 467.0
+offset_right = 517.0
+offset_bottom = 596.0
+theme_override_font_sizes/font_size = 70
+text = "Next"
+
+[node name="ReturnButton" type="Button" parent="."]
+custom_minimum_size = Vector2(100, 50)
+offset_left = 639.0
+offset_top = 467.0
+offset_right = 1014.0
+offset_bottom = 596.0
+theme_override_font_sizes/font_size = 70
+text = "Return"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_vkac0")
+autoplay = true
 
 [node name="BottonRow" type="HBoxContainer" parent="."]
 offset_left = 500.0
@@ -35,19 +74,5 @@ offset_top = 400.0
 offset_right = 540.0
 offset_bottom = 440.0
 
-[node name="NextButton" type="Button" parent="BottonRow"]
-custom_minimum_size = Vector2(100, 50)
-layout_mode = 2
-text = "Next"
-
-[node name="ReturnButton" type="Button" parent="BottonRow"]
-custom_minimum_size = Vector2(100, 50)
-layout_mode = 2
-text = "Return"
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("2_vkac0")
-autoplay = true
-
-[connection signal="button_down" from="BottonRow/NextButton" to="Control" method="_on_next_button_button_down"]
-[connection signal="button_down" from="BottonRow/ReturnButton" to="Control" method="_on_return_button_button_down"]
+[connection signal="button_down" from="NextButton" to="Control" method="_on_next_button_button_down"]
+[connection signal="button_down" from="ReturnButton" to="Control" method="_on_return_button_button_down"]
