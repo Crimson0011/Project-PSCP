@@ -11,4 +11,6 @@ func _on_Return_pressed():
 	get_tree().change_scene_to_file("res://main_menu.tscn")
 
 func _on_return_button_button_down() -> void:
+	$"../AudioStreamPlayer2D2".play()
+	await $"../AudioStreamPlayer2D2".finished
 	_on_Return_pressed()
