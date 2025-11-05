@@ -2,7 +2,6 @@ extends Control
 
 # --- CONSTANTS ---
 const MAX_LIFE := 5
-const MAX_LEVEL := 5
 const SCORE_PER_MONSTER := 100
 
 const BLOCK_GRAY = preload("res://blocks/gray.png")
@@ -71,8 +70,13 @@ func _load_words():
 func _start_level():
 	player_life = MAX_LIFE
 	enemy_life = globals.level
+	if enemy_life > 5:
+		enemy_life = 5
 	_update_hearts()
-	$EnemySprite.texture = ENEMY_IMAGES[globals.level]
+	var image_index = globals.level % 5
+	if image_index == 0:
+		image_index = 5
+	$EnemySprite.texture = ENEMY_IMAGES[image_index]
 	_new_word_round()
 
 func _new_word_round():
@@ -197,7 +201,7 @@ func _init_hearts():
 		$PlayerHearts.add_child(heart)
 
 	# Enemy hearts
-	for i in range(MAX_LEVEL):
+	for i in range(MAX_LIFE):
 		var heart = TextureRect.new()
 		heart.stretch_mode = TextureRect.STRETCH_KEEP_CENTERED
 		$EnemyHearts.add_child(heart)
@@ -205,7 +209,7 @@ func _init_hearts():
 func _update_hearts():
 	for i in range(MAX_LIFE):
 		$PlayerHearts.get_child(i).texture = HEART_FULL if i < player_life else HEART_EMPTY
-	for i in range(MAX_LEVEL):
+	for i in range(MAX_LIFE):
 		$EnemyHearts.get_child(i).texture = HEART_FULL if i < enemy_life else HEART_EMPTY
 
 func _slot(r,c):

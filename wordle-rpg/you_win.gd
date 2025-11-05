@@ -5,10 +5,6 @@ func _ready():
 	$ScoreContainer/HighScore.text = "Highest Score : %d" % globals._get_high_score()
 
 func _on_Next_pressed():
-	if globals.level >= globals.max_level:
-		globals.level = 1
-		get_tree().change_scene_to_file("res://main_menu.tscn")
-	else:
 		globals.level += 1
 		get_tree().change_scene_to_file("res://gameplay.tscn")
 
