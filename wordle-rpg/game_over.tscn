@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjsmnnetjmgul"]
+
+[ext_resource type="Script" uid="uid://b3iurp80p8f5l" path="res://game_over.gd" id="1_y26ei"]
+
+[node name="GameOver" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_y26ei")
+
+[node name="Container" type="VBoxContainer" parent="Control"]
+layout_mode = 0
+offset_left = 500.0
+offset_top = 200.0
+offset_right = 540.0
+offset_bottom = 277.0
+
+[node name="HighScore" type="Label" parent="Control/Container"]
+layout_mode = 2
+
+[node name="CurrentScore" type="Label" parent="Control/Container"]
+layout_mode = 2
+
+[node name="CorrectAnswer" type="Label" parent="Control/Container"]
+layout_mode = 2
+
+[node name="ReturnButton" type="Button" parent="Control"]
+custom_minimum_size = Vector2(200, 75)
+layout_mode = 0
+offset_left = 475.0
+offset_top = 400.0
+offset_right = 675.0
+offset_bottom = 475.0
+text = "RETURN"
+
+[connection signal="button_down" from="Control/ReturnButton" to="Control" method="_on_return_button_button_down"]

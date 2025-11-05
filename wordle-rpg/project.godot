@@ -11,6 +11,10 @@ config_version=5
 [application]
 
 config/name="WordleRPG"
-run/main_scene="uid://b4hr567ecefip"
+run/main_scene="uid://ckahj86pb32dp"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+globals="*res://globals.gd"

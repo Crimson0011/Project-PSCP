@@ -1,0 +1,48 @@
+[gd_scene load_steps=2 format=3 uid="uid://dd8tkfcw7iabq"]
+
+[ext_resource type="Script" uid="uid://dt5y6vjkm7ot3" path="res://you_win.gd" id="1_w5032"]
+
+[node name="YouWin_gd" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_w5032")
+
+[node name="ScoreContainer" type="VBoxContainer" parent="Control"]
+layout_mode = 0
+offset_left = 500.0
+offset_top = 200.0
+offset_right = 540.0
+offset_bottom = 250.0
+
+[node name="HighScore" type="Label" parent="Control/ScoreContainer"]
+layout_mode = 2
+
+[node name="CurrentScore" type="Label" parent="Control/ScoreContainer"]
+layout_mode = 2
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="BottonRow" type="HBoxContainer" parent="."]
+offset_left = 500.0
+offset_top = 400.0
+offset_right = 540.0
+offset_bottom = 440.0
+
+[node name="NextButton" type="Button" parent="BottonRow"]
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 2
+text = "Next"
+
+[node name="ReturnButton" type="Button" parent="BottonRow"]
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 2
+text = "Return"
+
+[connection signal="button_down" from="BottonRow/NextButton" to="Control" method="_on_next_button_button_down"]
+[connection signal="button_down" from="BottonRow/ReturnButton" to="Control" method="_on_return_button_button_down"]

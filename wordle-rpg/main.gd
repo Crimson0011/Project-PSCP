@@ -50,11 +50,8 @@ const LETTER_IMAGES := {
 	"Z": preload("res://letters/Z.png")
 }
 
-var level := 1
 var player_life := MAX_LIFE
 var enemy_life := 1
-var score := 0
-
 var current_row := 0
 var current_col := 0
 var answer := ""
@@ -73,9 +70,9 @@ func _load_words():
 
 func _start_level():
 	player_life = MAX_LIFE
-	enemy_life = level
+	enemy_life = globals.level
 	_update_hearts()
-	$EnemySprite.texture = ENEMY_IMAGES[level]
+	$EnemySprite.texture = ENEMY_IMAGES[globals.level]
 	_new_word_round()
 
 func _new_word_round():
@@ -86,10 +83,7 @@ func _new_word_round():
 	current_col = 0
 
 func _game_over():
-	get_tree().change_scene_to_file("res://ui/game_over.tscn")
-
-func _win_game():
-	get_tree().change_scene_to_file("res://ui/you_win.tscn")
+	get_tree().change_scene_to_file("res://game_over.tscn")
 
 # =============== INPUT ===============
 
@@ -171,15 +165,13 @@ func _check_result(guess:String):
 	if guess == answer:
 		enemy_life -= 1
 		player_life = MAX_LIFE
-		score += SCORE_PER_MONSTER
 		_update_hearts()
 
 		if enemy_life <= 0:
-			level += 1
-			if level > MAX_LEVEL:
-				_win_game()
-			else:
-				_start_level()
+			globals.score += SCORE_PER_MONSTER
+			if globals._get_high_score() < globals.score:
+				save_high_score(globals.score)
+			get_tree().change_scene_to_file("res://you_win.tscn")
 		else:
 			_new_word_round()
 	else:
@@ -189,6 +181,7 @@ func _check_result(guess:String):
 		_update_hearts()
 		if player_life <= 0:
 			_show_correct_word()
+			globals.answer = answer
 			_game_over()
 
 func _show_correct_word():
@@ -232,3 +225,8 @@ func _clear_board():
 				s.set_meta("char", "")
 				s.set_meta("state", "empty")
 				s.set_meta("pending", false)
+				
+func save_high_score(score):
+	var file = FileAccess.open("user://save.dat", FileAccess.WRITE)
+	file.store_string("SCORE=%d" % score)
+	file.close()
