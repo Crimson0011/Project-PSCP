@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ctr18yho8aksq"
-path="res://.godot/imported/enemy3.png-2f4504f0ab9e6e8da9121f0b6268b529.ctex"
+uid="uid://ut3qeutfkou8"
+path="res://.godot/imported/Wordle RPG.png-c1da33485fd5a4ddd7f20ec920104aad.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://enemies/enemy3.png"
-dest_files=["res://.godot/imported/enemy3.png-2f4504f0ab9e6e8da9121f0b6268b529.ctex"]
+source_file="res://Untitled/Wordle RPG.png"
+dest_files=["res://.godot/imported/Wordle RPG.png-c1da33485fd5a4ddd7f20ec920104aad.ctex"]
 
 [params]
 

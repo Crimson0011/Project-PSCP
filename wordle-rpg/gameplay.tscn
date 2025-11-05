@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://b4hr567ecefip"]
+[gd_scene load_steps=3 format=3 uid="uid://b4hr567ecefip"]
 
 [ext_resource type="Script" uid="uid://bmjdq7nu31pjb" path="res://main.gd" id="1_n0r7v"]
+[ext_resource type="Texture2D" uid="uid://btatgvpg48mp2" path="res://Untitled/Background.png" id="2_ej4tk"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -8,6 +9,11 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_n0r7v")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(576.00006, 326)
+scale = Vector2(0.799132, 0.63940436)
+texture = ExtResource("2_ej4tk")
 
 [node name="Rows" type="VBoxContainer" parent="."]
 layout_mode = 0
@@ -472,8 +478,14 @@ offset_bottom = 200.0
 
 [node name="EnemySprite" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(50, 50)
-layout_mode = 0
-offset_left = 550.0
-offset_top = 100.0
-offset_right = 600.0
-offset_bottom = 150.0
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 561.0
+offset_top = 88.0
+offset_right = 571.0
+offset_bottom = 98.0
+grow_horizontal = 2
+grow_vertical = 2
